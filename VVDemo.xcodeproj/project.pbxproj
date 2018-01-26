@@ -14,6 +14,22 @@
 		7ABF8B922019E59B00872E81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABF8B902019E59B00872E81 /* LaunchScreen.storyboard */; };
 		7ABF8B9D2019E59B00872E81 /* VVDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABF8B9C2019E59B00872E81 /* VVDemoTests.swift */; };
 		7ABF8BA82019E59B00872E81 /* VVDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABF8BA72019E59B00872E81 /* VVDemoUITests.swift */; };
+		7ABF8BBE2019EBE500872E81 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABF8BBD2019EBE500872E81 /* PacketTunnelProvider.swift */; };
+		7ABF8BC22019EBE500872E81 /* PacketTunnelProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7ABF8BB92019EBE500872E81 /* PacketTunnelProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7ABF8BC82019EE0700872E81 /* VpnManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABF8BC72019EE0700872E81 /* VpnManager.swift */; };
+		7ABF8BCB2019F08C00872E81 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BCA2019F08C00872E81 /* NetworkExtension.framework */; };
+		7ABF8BCE2019F48600872E81 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BCD2019F48600872E81 /* CocoaAsyncSocket.framework */; };
+		7ABF8BD02019F49600872E81 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BCF2019F49500872E81 /* CocoaLumberjack.framework */; };
+		7ABF8BD22019F49800872E81 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BD12019F49800872E81 /* CocoaLumberjackSwift.framework */; };
+		7ABF8BD42019F49D00872E81 /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BD32019F49D00872E81 /* lwip.framework */; };
+		7ABF8BD62019F4A000872E81 /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BD52019F4A000872E81 /* NEKit.framework */; };
+		7ABF8BD82019F4A200872E81 /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BD72019F4A200872E81 /* MMDB.framework */; };
+		7ABF8BDA2019F4A500872E81 /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BD92019F4A500872E81 /* Resolver.framework */; };
+		7ABF8BDC2019F4A700872E81 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BDB2019F4A700872E81 /* Sodium.framework */; };
+		7ABF8BDE2019F4AA00872E81 /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BDD2019F4AA00872E81 /* tun2socks.framework */; };
+		7ABF8BE02019F4AC00872E81 /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BDF2019F4AC00872E81 /* Yaml.framework */; };
+		7ABF8BE32019FADB00872E81 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BCA2019F08C00872E81 /* NetworkExtension.framework */; };
+		7ABF8BE62019FDBE00872E81 /* NEKitRule.conf in Resources */ = {isa = PBXBuildFile; fileRef = 7ABF8BE52019FDBE00872E81 /* NEKitRule.conf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +47,28 @@
 			remoteGlobalIDString = 7ABF8B832019E59B00872E81;
 			remoteInfo = VVDemo;
 		};
+		7ABF8BC02019EBE500872E81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ABF8B7C2019E59B00872E81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ABF8BB82019EBE500872E81;
+			remoteInfo = PacketTunnelProvider;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7ABF8BC62019EBE500872E81 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7ABF8BC22019EBE500872E81 /* PacketTunnelProvider.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7ABF8B842019E59B00872E81 /* VVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +84,24 @@
 		7ABF8BA32019E59B00872E81 /* VVDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VVDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABF8BA72019E59B00872E81 /* VVDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VVDemoUITests.swift; sourceTree = "<group>"; };
 		7ABF8BA92019E59B00872E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ABF8BB92019EBE500872E81 /* PacketTunnelProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnelProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ABF8BBC2019EBE500872E81 /* PacketTunnelProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnelProvider.entitlements; sourceTree = "<group>"; };
+		7ABF8BBD2019EBE500872E81 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		7ABF8BBF2019EBE500872E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ABF8BC72019EE0700872E81 /* VpnManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VpnManager.swift; sourceTree = "<group>"; };
+		7ABF8BCA2019F08C00872E81 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		7ABF8BCD2019F48600872E81 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		7ABF8BCF2019F49500872E81 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		7ABF8BD12019F49800872E81 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		7ABF8BD32019F49D00872E81 /* lwip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = lwip.framework; path = Carthage/Build/iOS/lwip.framework; sourceTree = "<group>"; };
+		7ABF8BD52019F4A000872E81 /* NEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NEKit.framework; path = Carthage/Build/iOS/NEKit.framework; sourceTree = "<group>"; };
+		7ABF8BD72019F4A200872E81 /* MMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMDB.framework; path = Carthage/Build/iOS/MMDB.framework; sourceTree = "<group>"; };
+		7ABF8BD92019F4A500872E81 /* Resolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Resolver.framework; path = Carthage/Build/iOS/Resolver.framework; sourceTree = "<group>"; };
+		7ABF8BDB2019F4A700872E81 /* Sodium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sodium.framework; path = Carthage/Build/iOS/Sodium.framework; sourceTree = "<group>"; };
+		7ABF8BDD2019F4AA00872E81 /* tun2socks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tun2socks.framework; path = Carthage/Build/iOS/tun2socks.framework; sourceTree = "<group>"; };
+		7ABF8BDF2019F4AC00872E81 /* Yaml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Yaml.framework; path = Carthage/Build/iOS/Yaml.framework; sourceTree = "<group>"; };
+		7ABF8BE22019FAA100872E81 /* VVDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VVDemo.entitlements; sourceTree = "<group>"; };
+		7ABF8BE52019FDBE00872E81 /* NEKitRule.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = NEKitRule.conf; path = "../../../../RabbitVpnDemo/rabbit/Supporting Files/NEKitRule.conf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ABF8BCB2019F08C00872E81 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +127,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7ABF8BB62019EBE500872E81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ABF8BD62019F4A000872E81 /* NEKit.framework in Frameworks */,
+				7ABF8BCE2019F48600872E81 /* CocoaAsyncSocket.framework in Frameworks */,
+				7ABF8BD02019F49600872E81 /* CocoaLumberjack.framework in Frameworks */,
+				7ABF8BD82019F4A200872E81 /* MMDB.framework in Frameworks */,
+				7ABF8BD42019F49D00872E81 /* lwip.framework in Frameworks */,
+				7ABF8BDA2019F4A500872E81 /* Resolver.framework in Frameworks */,
+				7ABF8BDE2019F4AA00872E81 /* tun2socks.framework in Frameworks */,
+				7ABF8BE32019FADB00872E81 /* NetworkExtension.framework in Frameworks */,
+				7ABF8BE02019F4AC00872E81 /* Yaml.framework in Frameworks */,
+				7ABF8BDC2019F4A700872E81 /* Sodium.framework in Frameworks */,
+				7ABF8BD22019F49800872E81 /* CocoaLumberjackSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,7 +154,9 @@
 				7ABF8B862019E59B00872E81 /* VVDemo */,
 				7ABF8B9B2019E59B00872E81 /* VVDemoTests */,
 				7ABF8BA62019E59B00872E81 /* VVDemoUITests */,
+				7ABF8BBA2019EBE500872E81 /* PacketTunnelProvider */,
 				7ABF8B852019E59B00872E81 /* Products */,
+				7ABF8BC92019F08C00872E81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +166,7 @@
 				7ABF8B842019E59B00872E81 /* VVDemo.app */,
 				7ABF8B982019E59B00872E81 /* VVDemoTests.xctest */,
 				7ABF8BA32019E59B00872E81 /* VVDemoUITests.xctest */,
+				7ABF8BB92019EBE500872E81 /* PacketTunnelProvider.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,11 +174,14 @@
 		7ABF8B862019E59B00872E81 /* VVDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7ABF8BE22019FAA100872E81 /* VVDemo.entitlements */,
 				7ABF8B872019E59B00872E81 /* AppDelegate.swift */,
 				7ABF8B892019E59B00872E81 /* ViewController.swift */,
+				7ABF8BC72019EE0700872E81 /* VpnManager.swift */,
 				7ABF8B8B2019E59B00872E81 /* Main.storyboard */,
 				7ABF8B8E2019E59B00872E81 /* Assets.xcassets */,
 				7ABF8B902019E59B00872E81 /* LaunchScreen.storyboard */,
+				7ABF8BE52019FDBE00872E81 /* NEKitRule.conf */,
 				7ABF8B932019E59B00872E81 /* Info.plist */,
 			);
 			path = VVDemo;
@@ -125,6 +205,42 @@
 			path = VVDemoUITests;
 			sourceTree = "<group>";
 		};
+		7ABF8BBA2019EBE500872E81 /* PacketTunnelProvider */ = {
+			isa = PBXGroup;
+			children = (
+				7ABF8BBD2019EBE500872E81 /* PacketTunnelProvider.swift */,
+				7ABF8BBF2019EBE500872E81 /* Info.plist */,
+				7ABF8BBB2019EBE500872E81 /* Supporting Files */,
+			);
+			path = PacketTunnelProvider;
+			sourceTree = "<group>";
+		};
+		7ABF8BBB2019EBE500872E81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7ABF8BBC2019EBE500872E81 /* PacketTunnelProvider.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7ABF8BC92019F08C00872E81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ABF8BDF2019F4AC00872E81 /* Yaml.framework */,
+				7ABF8BDD2019F4AA00872E81 /* tun2socks.framework */,
+				7ABF8BDB2019F4A700872E81 /* Sodium.framework */,
+				7ABF8BD92019F4A500872E81 /* Resolver.framework */,
+				7ABF8BD72019F4A200872E81 /* MMDB.framework */,
+				7ABF8BD52019F4A000872E81 /* NEKit.framework */,
+				7ABF8BD32019F49D00872E81 /* lwip.framework */,
+				7ABF8BD12019F49800872E81 /* CocoaLumberjackSwift.framework */,
+				7ABF8BCF2019F49500872E81 /* CocoaLumberjack.framework */,
+				7ABF8BCD2019F48600872E81 /* CocoaAsyncSocket.framework */,
+				7ABF8BCA2019F08C00872E81 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +251,13 @@
 				7ABF8B802019E59B00872E81 /* Sources */,
 				7ABF8B812019E59B00872E81 /* Frameworks */,
 				7ABF8B822019E59B00872E81 /* Resources */,
+				7ABF8BC62019EBE500872E81 /* Embed App Extensions */,
+				7ABF8BCC2019F3B600872E81 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7ABF8BC12019EBE500872E81 /* PBXTargetDependency */,
 			);
 			name = VVDemo;
 			productName = VVDemo;
@@ -181,6 +300,24 @@
 			productReference = 7ABF8BA32019E59B00872E81 /* VVDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7ABF8BB82019EBE500872E81 /* PacketTunnelProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ABF8BC32019EBE500872E81 /* Build configuration list for PBXNativeTarget "PacketTunnelProvider" */;
+			buildPhases = (
+				7ABF8BB52019EBE500872E81 /* Sources */,
+				7ABF8BB62019EBE500872E81 /* Frameworks */,
+				7ABF8BB72019EBE500872E81 /* Resources */,
+				7ABF8BE12019F4C900872E81 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnelProvider;
+			productName = PacketTunnelProvider;
+			productReference = 7ABF8BB92019EBE500872E81 /* PacketTunnelProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,6 +331,17 @@
 					7ABF8B832019E59B00872E81 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
 					};
 					7ABF8B972019E59B00872E81 = {
 						CreatedOnToolsVersion = 9.2;
@@ -204,6 +352,18 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 7ABF8B832019E59B00872E81;
+					};
+					7ABF8BB82019EBE500872E81 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -223,6 +383,7 @@
 				7ABF8B832019E59B00872E81 /* VVDemo */,
 				7ABF8B972019E59B00872E81 /* VVDemoTests */,
 				7ABF8BA22019E59B00872E81 /* VVDemoUITests */,
+				7ABF8BB82019EBE500872E81 /* PacketTunnelProvider */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ABF8B922019E59B00872E81 /* LaunchScreen.storyboard in Resources */,
+				7ABF8BE62019FDBE00872E81 /* NEKitRule.conf in Resources */,
 				7ABF8B8F2019E59B00872E81 /* Assets.xcassets in Resources */,
 				7ABF8B8D2019E59B00872E81 /* Main.storyboard in Resources */,
 			);
@@ -252,7 +414,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7ABF8BB72019EBE500872E81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7ABF8BCC2019F3B600872E81 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/lwip.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MMDB.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NEKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Sodium.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/tun2socks.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Yaml.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Resolver.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		7ABF8BE12019F4C900872E81 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7ABF8B802019E59B00872E81 /* Sources */ = {
@@ -261,6 +469,7 @@
 			files = (
 				7ABF8B8A2019E59B00872E81 /* ViewController.swift in Sources */,
 				7ABF8B882019E59B00872E81 /* AppDelegate.swift in Sources */,
+				7ABF8BC82019EE0700872E81 /* VpnManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +489,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7ABF8BB52019EBE500872E81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ABF8BBE2019EBE500872E81 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +509,11 @@
 			isa = PBXTargetDependency;
 			target = 7ABF8B832019E59B00872E81 /* VVDemo */;
 			targetProxy = 7ABF8BA42019E59B00872E81 /* PBXContainerItemProxy */;
+		};
+		7ABF8BC12019EBE500872E81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ABF8BB82019EBE500872E81 /* PacketTunnelProvider */;
+			targetProxy = 7ABF8BC02019EBE500872E81 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,9 +647,13 @@
 		7ABF8BAD2019E59B00872E81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VVDemo/VVDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NKJT58L7D;
 				INFOPLIST_FILE = VVDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuanjilee.VVDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,9 +665,13 @@
 		7ABF8BAE2019E59B00872E81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VVDemo/VVDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NKJT58L7D;
 				INFOPLIST_FILE = VVDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuanjilee.VVDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,6 +742,48 @@
 			};
 			name = Release;
 		};
+		7ABF8BC42019EBE500872E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnelProvider/PacketTunnelProvider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NKJT58L7D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PacketTunnelProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanjilee.VVDemo.PacketTunnelProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7ABF8BC52019EBE500872E81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnelProvider/PacketTunnelProvider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NKJT58L7D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PacketTunnelProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanjilee.VVDemo.PacketTunnelProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,6 +819,15 @@
 			buildConfigurations = (
 				7ABF8BB32019E59B00872E81 /* Debug */,
 				7ABF8BB42019E59B00872E81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ABF8BC32019EBE500872E81 /* Build configuration list for PBXNativeTarget "PacketTunnelProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ABF8BC42019EBE500872E81 /* Debug */,
+				7ABF8BC52019EBE500872E81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

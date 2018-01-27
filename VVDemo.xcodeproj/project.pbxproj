@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A71BF41201B04DB004FDABF /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A71BF40201B04DB004FDABF /* NetworkExtension.framework */; };
+		7A71BF42201B04EB004FDABF /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A71BF40201B04DB004FDABF /* NetworkExtension.framework */; };
 		7ABF8B882019E59B00872E81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABF8B872019E59B00872E81 /* AppDelegate.swift */; };
 		7ABF8B8A2019E59B00872E81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABF8B892019E59B00872E81 /* ViewController.swift */; };
 		7ABF8B8D2019E59B00872E81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABF8B8B2019E59B00872E81 /* Main.storyboard */; };
@@ -17,7 +19,6 @@
 		7ABF8BBE2019EBE500872E81 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABF8BBD2019EBE500872E81 /* PacketTunnelProvider.swift */; };
 		7ABF8BC22019EBE500872E81 /* PacketTunnelProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7ABF8BB92019EBE500872E81 /* PacketTunnelProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7ABF8BC82019EE0700872E81 /* VpnManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABF8BC72019EE0700872E81 /* VpnManager.swift */; };
-		7ABF8BCB2019F08C00872E81 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BCA2019F08C00872E81 /* NetworkExtension.framework */; };
 		7ABF8BCE2019F48600872E81 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BCD2019F48600872E81 /* CocoaAsyncSocket.framework */; };
 		7ABF8BD02019F49600872E81 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BCF2019F49500872E81 /* CocoaLumberjack.framework */; };
 		7ABF8BD22019F49800872E81 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BD12019F49800872E81 /* CocoaLumberjackSwift.framework */; };
@@ -28,7 +29,6 @@
 		7ABF8BDC2019F4A700872E81 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BDB2019F4A700872E81 /* Sodium.framework */; };
 		7ABF8BDE2019F4AA00872E81 /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BDD2019F4AA00872E81 /* tun2socks.framework */; };
 		7ABF8BE02019F4AC00872E81 /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BDF2019F4AC00872E81 /* Yaml.framework */; };
-		7ABF8BE32019FADB00872E81 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF8BCA2019F08C00872E81 /* NetworkExtension.framework */; };
 		7ABF8BE62019FDBE00872E81 /* NEKitRule.conf in Resources */ = {isa = PBXBuildFile; fileRef = 7ABF8BE52019FDBE00872E81 /* NEKitRule.conf */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +71,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7A71BF40201B04DB004FDABF /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		7ABF8B842019E59B00872E81 /* VVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABF8B872019E59B00872E81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ABF8B892019E59B00872E81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +90,6 @@
 		7ABF8BBD2019EBE500872E81 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
 		7ABF8BBF2019EBE500872E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ABF8BC72019EE0700872E81 /* VpnManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VpnManager.swift; sourceTree = "<group>"; };
-		7ABF8BCA2019F08C00872E81 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		7ABF8BCD2019F48600872E81 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 		7ABF8BCF2019F49500872E81 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
 		7ABF8BD12019F49800872E81 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ABF8BCB2019F08C00872E81 /* NetworkExtension.framework in Frameworks */,
+				7A71BF42201B04EB004FDABF /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +138,7 @@
 				7ABF8BD42019F49D00872E81 /* lwip.framework in Frameworks */,
 				7ABF8BDA2019F4A500872E81 /* Resolver.framework in Frameworks */,
 				7ABF8BDE2019F4AA00872E81 /* tun2socks.framework in Frameworks */,
-				7ABF8BE32019FADB00872E81 /* NetworkExtension.framework in Frameworks */,
+				7A71BF41201B04DB004FDABF /* NetworkExtension.framework in Frameworks */,
 				7ABF8BE02019F4AC00872E81 /* Yaml.framework in Frameworks */,
 				7ABF8BDC2019F4A700872E81 /* Sodium.framework in Frameworks */,
 				7ABF8BD22019F49800872E81 /* CocoaLumberjackSwift.framework in Frameworks */,
@@ -226,6 +226,7 @@
 		7ABF8BC92019F08C00872E81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A71BF40201B04DB004FDABF /* NetworkExtension.framework */,
 				7ABF8BDF2019F4AC00872E81 /* Yaml.framework */,
 				7ABF8BDD2019F4AA00872E81 /* tun2socks.framework */,
 				7ABF8BDB2019F4A700872E81 /* Sodium.framework */,
@@ -236,7 +237,6 @@
 				7ABF8BD12019F49800872E81 /* CocoaLumberjackSwift.framework */,
 				7ABF8BCF2019F49500872E81 /* CocoaLumberjack.framework */,
 				7ABF8BCD2019F48600872E81 /* CocoaAsyncSocket.framework */,
-				7ABF8BCA2019F08C00872E81 /* NetworkExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -357,6 +357,9 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.NetworkExtensions.iOS = {
 								enabled = 1;
 							};
